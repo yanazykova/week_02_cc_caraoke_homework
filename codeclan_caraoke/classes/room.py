@@ -13,3 +13,12 @@ class Room:
 
     def check_out(self, guest):
         self.guest_list.remove(guest)
+
+    def songs_count(self):
+        return len(self.song_list)
+
+    def add_song(self, song):
+        self.song_list.append(song)
+
+    # def add_to_queue(self, person):
+    #     self.queue.append(person)
