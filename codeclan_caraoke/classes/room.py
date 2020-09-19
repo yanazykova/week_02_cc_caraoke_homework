@@ -11,5 +11,5 @@ class Room:
     def check_in(self, guest):
         self.guest_list.append(guest)
 
-    # def drop_off(self, person):
-    #     self.passengers.remove(person)
+    def check_out(self, guest):
+        self.guest_list.remove(guest)
