@@ -10,6 +10,9 @@ class TestRoom(unittest.TestCase):
         self.guest = Guest("John")
         self.song = Song("Don't Stop Me Now", "Queen")
 
+    def test_room_has_name(self):
+        self.assertEqual("Green Room", self.room.name)
+
     def test_starts_with_no_guests(self):
         self.assertEqual(0, self.room.guest_count())
 
