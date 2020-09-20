@@ -5,6 +5,6 @@ from classes.song import Song
 class TestSong(unittest.TestCase):
     
     def setUp(self):
-        self.song = Song("Never Give Up")
+        self.song = Song("Don't Stop Me Now", "Queen")
 
     

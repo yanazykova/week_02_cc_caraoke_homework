@@ -8,7 +8,7 @@ class TestRoom(unittest.TestCase):
     def setUp(self):
         self.room = Room("Green Room")
         self.guest = Guest("John")
-        self.song = Song("Never Give Up")
+        self.song = Song("Don't Stop Me Now", "Queen")
 
     def test_starts_with_no_guests(self):
         self.assertEqual(0, self.room.guest_count())
